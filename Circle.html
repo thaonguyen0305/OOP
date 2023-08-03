@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Circle = function(radius) {
+            this.radius = radius;
+
+            this.getRadius = function() {
+                return radius;
+            }
+
+            this.getArea = function() {
+                return Math.PI * radius * radius;
+            }
+        };
+
+        let circle = new Circle(2);
+        let area = circle.getArea();
+        let circumference = circle.getCircumference();
+
+        console.log("Diện tích hình tròn là : " + area);
+    </script>
+</body>
+</html>
